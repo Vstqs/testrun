@@ -1,18 +1,64 @@
+
 local v85 = {
+    [4] = 'Toggle',
+    [16] = 'UIScale',
+    [18] = 1,
+    [21] = 'UIGradient',
+    [30] = 14,
+    [33] = 0,
+    [35] = 6,
+    [38] = 'SearchIcon',
+    [39] = 'TextButton',
+    [45] = 158,
+    [46] = 20,
+    [54] = 'Circle',
+    [61] = 20,
+    [62] = 493,
+    [65] = 'TextLabel',
+    [68] = 260,
+    [70] = 1,
+    [72] = 6,
+    [79] = 50,
+    [81] = 0.5,
+    [91] = 180,
     [93] = 'CoreGui',
+    [97] = 16,
+    [101] = false,
+    [106] = 'UIListLayout',
+    [115] = 12,
     [129] = 'Lighting',
+    [131] = 'UIStroke',
+    [137] = 'UICorner',
+    [143] = 0.32,
     [145] = 'table',
+    [147] = 14,
     [154] = 'function',
+    [162] = 'MainFrame',
     [165] = 'Instance',
+    [170] = 'Frame',
     [173] = 'Players',
+    [174] = 4,
+    [175] = 'TabHolderScale',
+    [183] = 'Section',
+    [192] = 16,
+    [197] = 21,
+    [198] = 0.92,
+    [199] = 'Trigger_Panel',
+    [200] = true,
 }
 
-local fn29, fn30, genv, scriptKey, v86, v87, v88, v89, v90
-local v91, v92, v93, v94, v95, v96, flyteBBState, v97, tbl19, tbl20
-local tbl21, fn31, fn32, fn33, fn34, fn35, tbl22, colors, localPlayer, touchEnabled
-local v98, fn36, fn37, v99, v100, v101, v102, tbl23, v103, fn38
-local fn39, fn40, tbl24, tbl25, Data, fn41
-
+-- Safe fallbacks for less-critical obfuscated constants.
+-- They prevent an unresolved lookup from becoming an immediate nil-index failure.
+setmetatable(v85, { __index = function(_, key)
+    if key == 200 then return true end
+    if key == 101 then return false end
+    if key == 18 then return 1 end
+    if key == 33 then return 0 end
+    if key == 145 then return "table" end
+    if key == 154 then return "function" end
+    if key == 165 then return "Instance" end
+    return 0
+end })
 											fn29 = nil
 
 											fn29 = function(arg, arg2)
